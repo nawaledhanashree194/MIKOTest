@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="fill"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/topImage"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill"
+                ></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:gravity="bottom"
+            android:background="@color/backgroundBlue">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/valfunded"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Funded"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:layout_below="@id/textTitle"
+                        android:textColor="@color/black"
+                        android:id="@+id/textfunded"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/valgoals"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goals"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="16sp"                        android:gravity="center"
+                        android:layout_below="@id/textTitle"
+                        android:textColor="@color/black"
+                        android:id="@+id/textgoals"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/valendsin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ends In"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/textendsin"
+                        />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnpledge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Pledge"
+                    android:textColor="@color/backgroundBlue"
+                    app:cornerRadius="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_favourite"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smile CrowdFunding"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textTitle"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Smile CrowdFunding"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="12dp"
+                    android:layout_below="@id/textTitle"
+                    android:textColor="@color/black"
+                    android:id="@+id/shortDesc"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            app:cardCornerRadius="100dp"
+            android:background="@color/circleBlue"
+            app:cardBackgroundColor="@color/circleBlue"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="100%"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/percent"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
